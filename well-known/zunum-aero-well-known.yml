@@ -1,0 +1,56 @@
+generated: '2026-09-05'
+method: probed
+source: live probes of /.well-known/ paths on every host this record knows
+summary: >-
+  Nothing is served. Zunum Aero operates a single web host (zunum.aero, with www.zunum.aero
+  301-redirecting to it) running WordPress; every /.well-known/ path returns HTTP 404 with the
+  site's themed not-found page. There is no security.txt, no api-catalog, no OIDC or OAuth
+  discovery document, no ai-plugin.json, no A2A agent card and no aauth-resource.json.
+pointer_basis: >-
+  NO WellKnown pointer and NO SecurityTxt pointer emitted — not one path returned a document.
+  This file records a measured absence, not a published surface.
+false_positive_watch: >-
+  The 404 bodies are full HTML pages (the WordPress "Page not found" template), so any future
+  round must read the status, not the body length. No path on this host answers 200 for a
+  non-existent resource, so there is no SPA catch-all false positive here.
+hosts:
+- host: https://zunum.aero
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+- host: https://www.zunum.aero
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+  - path: /.well-known/openid-configuration
+    status: 301
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+  - path: /.well-known/api-catalog
+    status: 301
+  - path: /.well-known/ai-plugin.json
+    status: 301
+  - path: /.well-known/agent-card.json
+    status: 301
+  - path: /.well-known/agent.json
+    status: 301
+  - path: /.well-known/aauth-resource.json
+    status: 301
+  note: >-
+    www.zunum.aero 301-redirects every path to the apex host; the apex results above are the
+    authoritative measurement.
+checked: '2026-09-05'

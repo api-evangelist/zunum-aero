@@ -1,0 +1,50 @@
+# Zunum Aero
+
+> Zunum Aero is an American aerospace company (founded 2013, Kirkland / Bothell, Washington)
+> that developed the ZA10 hybrid-to-electric regional aircraft — a six-to-twelve-seat airplane
+> targeting a 700-nautical-mile range — backed by Boeing HorizonX and JetBlue Technology
+> Ventures. It laid off nearly all staff in late 2018 and paused operations.
+
+<!--
+generated: 2026-09-05
+method: generated
+source: apis.yml + live probes of zunum.aero (https://zunum.aero/llms.txt returned HTTP 404)
+-->
+
+## What this company is
+
+Zunum Aero is an aircraft manufacturer, not a software vendor. The product is hardware:
+hybrid-electric propulsion and airframes for regional aviation.
+
+## API surface
+
+**There is none.** As of 2026-09-05 Zunum Aero publishes no developer program, no developer
+portal, no API documentation, no SDKs and no machine-readable contract. Probed and confirmed
+absent on zunum.aero: `/openapi.json`, `/openapi.yaml`, `/swagger.json`, `/api-docs`, `/docs`,
+`/redoc`, `/graphql`, `/llms.txt` and the full `/.well-known/` set (security.txt,
+openid-configuration, oauth-authorization-server, api-catalog, ai-plugin.json,
+agent-card.json, agent.json) — every one returns HTTP 404.
+
+The only machine-readable endpoints on the domain are incidental to the website's CMS:
+a stock WordPress REST endpoint at `https://zunum.aero/wp-json` (default core plus theme and
+plugin namespaces — not a product API, not documented, and not offered to developers) and an
+RSS feed at `https://zunum.aero/feed/`. Neither is registered as an API in this profile.
+
+No packages exist on npm or PyPI, and no GitHub organization for the company was found.
+
+## Public pages
+
+- [Home](https://zunum.aero/)
+- [Aircraft](https://zunum.aero/aircraft/)
+- [Technology](https://zunum.aero/technology/)
+- [Our Charge](https://zunum.aero/our-charge/)
+- [In the News](https://zunum.aero/in-the-news/): dated press posts (RSS at /feed/)
+- [Press Materials](https://zunum.aero/press-materials/)
+- [Careers](https://zunum.aero/careers/)
+- [LinkedIn](https://www.linkedin.com/company/3679319/)
+- [X (Twitter)](https://twitter.com/zunumaero)
+
+## About this profile
+
+This is an independent third-party profile maintained by API Evangelist from public sources.
+Corrections, re-scores and removal are free: https://apievangelist.com
