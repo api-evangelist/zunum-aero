@@ -14,8 +14,22 @@
       "title": "",
       "saved": 0,
       "method": "discovered"
+    },
+    {
+      "source": "https://zunum.aero/blog/feed/",
+      "feed_url": "https://zunum.aero/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://zunum.aero/in-the-news/blog/feed/",
+      "feed_url": "https://zunum.aero/in-the-news/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-09-06T19:17:18Z"
+  "fetched": "2026-09-13T13:00:00Z"
 }
